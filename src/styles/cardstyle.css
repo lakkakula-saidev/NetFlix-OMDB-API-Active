@@ -1,0 +1,47 @@
+.titleWrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  /* line-height: X;       
+   max-height: X*N;  */
+}
+
+.cardImages {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.commentDiv {
+  display: flex;
+  justify-content: center;
+}
+.imageComment {
+  height: 200px;
+  width: 150px;
+}
+
+body.modal-open {
+  overflow: inherit !important;
+}
+
+body > form {
+  font-family: "Roboto", sans-serif;
+}
+
+.newComment {
+  margin-top: 25px;
+}
+
+.detailsRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}

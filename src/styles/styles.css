@@ -1,0 +1,166 @@
+.btn {
+  border-radius: 0;
+}
+
+#logo {
+  height: 48px;
+}
+
+#avatar {
+  height: 36px;
+}
+
+#avatar-small {
+  height: 24px;
+  margin-right: 10px;
+}
+
+.dropdown-menu {
+  margin-left: -100px;
+  background-color: black;
+}
+
+.icon {
+  margin: 4px 10px;
+}
+
+.dropdown-menu a {
+  font-size: 12px;
+}
+
+.genre-details {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.genre-button {
+  margin-left: 4em;
+}
+
+.movie-row {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.movie-cover {
+  width: 99%;
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+.movie-cover:hover {
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.carousel-control-next {
+  margin-right: -5%;
+}
+
+.carousel-control-prev {
+  margin-left: -5%;
+}
+
+.account-page {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #f3f3f3;
+}
+
+.movie-image {
+  width: 100%;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.movie-image:hover {
+  transform: scale(1.1);
+}
+
+.carousel-control-next {
+  margin-right: -5%;
+}
+
+.carousel-control-prev {
+  margin-left: -5%;
+}
+
+.gallery {
+  margin-bottom: 50px;
+}
+
+.genre-details {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  background-color: #000000;
+  font-family: var(--bs-font-sans-serif);
+}
+h2,
+h5 {
+  color: aliceblue;
+}
+.genre-options {
+  margin-left: 4em;
+}
+
+nav #navy .navbar .navbar-expand-lg {
+  background-color: black !important;
+}
+
+div {
+  display: block;
+}
+
+.profile-page {
+  padding: 5% 20%;
+
+  color: white;
+}
+
+.profile-title {
+  font-size: 64px;
+}
+
+.edit-icon {
+  position: relative;
+  left: 10%;
+  top: -10%;
+  background: black;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.container div {
+  background-color: solid black;
+}
+
+.input-profile {
+  position: relative;
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+hr {
+  color: gray;
+  height: 2px !important;
+  border: none;
+  background-color: gray;
+}
+
+button {
+  border-radius: 0px !important;
+}
