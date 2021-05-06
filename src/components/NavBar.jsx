@@ -3,7 +3,8 @@ import logo from "../../src/assets/netflix_logo.png";
 import "../styles/styles.css";
 import { Component } from "react";
 import SearchMovie from "./search";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Button } from "react-bootstrap";
+import { withRouter, Link } from "react-router-dom";
 
 class NavBar extends Component {
   state = {
@@ -35,7 +36,9 @@ class NavBar extends Component {
           <nav className="navbar navbar-expand-lg navbar-dark">
             <div className="container-fluid">
               <a className="navbar-brand" href="#">
-                <img src={logo} id="logo" />
+                <Link to="/">
+                  <img src={logo} id="logo" />
+                </Link>
               </a>
               <button
                 className="navbar-toggler"
@@ -60,7 +63,7 @@ class NavBar extends Component {
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#">
-                      Tv Shows
+                      <Link to="/TV Shows">Tv Shows</Link>
                     </a>
                   </li>
                   <li className="nav-item">
@@ -80,7 +83,7 @@ class NavBar extends Component {
                   </li>
                 </ul>
 
-                <ul className="navbar-nav">
+                <ul className="navbar-nav  align-items-center">
                   <li className="nav-item">
                     <a className="nav-link active" aria-current="page" href="#">
                       <input
@@ -109,6 +112,13 @@ class NavBar extends Component {
                       >
                         <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"></path>
                       </svg>
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      <Link to="/Registration">
+                        <Button variant="danger">Register</Button>
+                      </Link>
                     </a>
                   </li>
 
@@ -179,4 +189,4 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+export default withRouter(NavBar);

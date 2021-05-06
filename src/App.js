@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar";
 import MainBody from "./components/MainBody";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import ShowDetail from "./components/ShowDetail";
+import Registration from "./components/Registration";
 
 const App = () => {
   return (
@@ -15,11 +16,25 @@ const App = () => {
       <Router>
         <NavBar />
         <Route
-          render={(routerProps) => <MainBody {...routerProps} />}
+          render={(routerProps) => (
+            <Registration {...routerProps} title="Registration" />
+          )}
+          path="/Registration"
+          exact
+        />
+        <Route
+          render={(routerProps) => (
+            <MainBody {...routerProps} title="Main Section" />
+          )}
           path="/"
           exact
         />
-        <Route component={ShowDetail} path="/ShowDetail/:Id" />
+        <Route
+          path="/ShowDetail/:Id"
+          render={(routerProps) => (
+            <ShowDetail {...routerProps} title="Show Details" />
+          )}
+        />
       </Router>
     </div>
   );

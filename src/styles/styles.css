@@ -99,6 +99,9 @@
   align-items: center;
   justify-content: space-between;
 }
+body a {
+  color: inherit;
+}
 
 body {
   background-color: #000000;
