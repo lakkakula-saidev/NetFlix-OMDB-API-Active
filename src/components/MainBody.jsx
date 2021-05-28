@@ -56,7 +56,7 @@ class MainBody extends Component {
                     </>
                 ))}
 
-                <Row>
+                {/* <Row>
                     {this.state.isLoading && <Spinner animation="border" variant="primary" />}
                     {!this.state.isLoading && (
                         <>
@@ -68,7 +68,7 @@ class MainBody extends Component {
                             })}
                         </>
                     )}
-                </Row>
+                </Row> */}
             </Container>
         );
     }
