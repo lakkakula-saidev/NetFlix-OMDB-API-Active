@@ -9,6 +9,7 @@ import MainBody from "./components/MainBody";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import ShowDetail from "./components/ShowDetail";
 import Registration from "./components/Registration";
+import AddNewMedia from "./components/addNewMedia";
 
 const App = () => {
   return (
@@ -27,6 +28,13 @@ const App = () => {
             <MainBody {...routerProps} title="Main Section" />
           )}
           path="/"
+          exact
+        />
+        <Route
+          render={(routerProps) => (
+            <AddNewMedia {...routerProps} title="Add New Media" />
+          )}
+          path="/Add Media"
           exact
         />
         <Route
